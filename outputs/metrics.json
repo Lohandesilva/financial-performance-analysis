@@ -1,0 +1,908 @@
+{
+  "data_quality": {
+    "rows_in": 503,
+    "dividend_yield_missing_filled_zero": 104,
+    "sub_industries": 127,
+    "sectors": 11,
+    "dual_class_secondary_rows": 3,
+    "rows_with_no_market_data": 17,
+    "symbols_with_no_market_data": [
+      "ANSS",
+      "BF.B",
+      "BK",
+      "BRK.B",
+      "CTLT",
+      "CTRA",
+      "DAY",
+      "DFS",
+      "FI",
+      "HES",
+      "HOLX",
+      "IPG",
+      "JNPR",
+      "K",
+      "MMC",
+      "MRO",
+      "WBA"
+    ],
+    "missing_by_field": {
+      "price": 17,
+      "price_to_earnings": 45,
+      "dividend_yield": 0,
+      "eps": 17,
+      "week52_low": 17,
+      "week52_high": 17,
+      "market_cap": 18,
+      "ebitda": 43,
+      "price_to_sales": 18,
+      "price_to_book": 21
+    },
+    "rows_screened": 503,
+    "rows_failing_each_rule": {
+      "no_market_data": 17,
+      "dual_class_secondary": 3,
+      "revenue_not_derivable": 18,
+      "ebitda_missing": 43,
+      "ebitda_margin_impossible": 1,
+      "negative_trailing_eps": 28,
+      "pe_missing": 17,
+      "non_positive_pe": 0,
+      "non_positive_book": 32,
+      "pb_missing": 21,
+      "book_near_zero": 4,
+      "payout_above_earnings": 40
+    },
+    "universe_sizes": {
+      "base": 483,
+      "margin": 455,
+      "returns": 380,
+      "core": 354
+    },
+    "excluded_from_base": 20,
+    "excluded_from_core": 129,
+    "core_exclusion_rate_within_base": 0.267081,
+    "market_cap_in_file": 70709796536936.0,
+    "market_cap_base": 66583873135208.0,
+    "share_of_base_market_cap": {
+      "margin": 0.940369,
+      "returns": 0.907705,
+      "core": 0.85053
+    },
+    "flagged_high_pe": 17,
+    "flagged_high_ps": 2,
+    "net_income_reconciliation": {
+      "median_relative_gap": 2.4306068763109917e-08,
+      "max_relative_gap": 1.4008473418329477e-07,
+      "rows_over_1pct_gap": 0,
+      "note": "tautological in this source: P/E is computed as price / EPS"
+    }
+  },
+  "position": {
+    "constituents_in_file": 503,
+    "distinct_companies": 483,
+    "index_market_cap": 66583873135208.0,
+    "aggregate_revenue_core": 14766355781399.338,
+    "aggregate_ebitda_core": 3358573658872.0,
+    "aggregate_net_income_core": 2167511428911.0225,
+    "aggregate_ebitda_margin_core": 0.22744769993302463,
+    "aggregate_net_margin_core": 0.1467871600142102,
+    "median_ebitda_margin_margin_universe": 0.25430124412335037,
+    "median_net_margin_core": 0.13183039681204897,
+    "median_roe_core": 0.18066143053198636,
+    "median_pe_core": 24.1627655,
+    "median_payout_core": 0.2939470581,
+    "cap_weighted_pe_core": 26.127471336363023,
+    "loss_making_constituents": 28,
+    "negative_book_constituents": 32,
+    "payout_above_earnings_constituents": 40
+  },
+  "dispersion": {
+    "ebitda_margin_by_sector": {
+      "grouping": "sector",
+      "metric": "ebitda_margin",
+      "groups": 11,
+      "observations": 455,
+      "f_statistic": 15.673954349342667,
+      "p_value": 3.6611831496791274e-24,
+      "eta_squared": 0.2609109807920306,
+      "omega_squared": 0.24385890054943624,
+      "share_within_group": 0.7390890192079694
+    },
+    "ebitda_margin_by_subindustry": {
+      "grouping": "sub_industry",
+      "metric": "ebitda_margin",
+      "groups": 62,
+      "observations": 367,
+      "f_statistic": 7.115209149148754,
+      "p_value": 3.6020763531923954e-32,
+      "eta_squared": 0.5872956101338692,
+      "omega_squared": 0.5040726567565287,
+      "share_within_group": 0.4127043898661307
+    },
+    "net_margin_by_sector": {
+      "grouping": "sector",
+      "metric": "net_margin",
+      "groups": 11,
+      "observations": 354,
+      "f_statistic": 8.81497548456509,
+      "p_value": 6.738689624229865e-13,
+      "eta_squared": 0.2044527541879457,
+      "omega_squared": 0.18083952141443038,
+      "share_within_group": 0.7955472458120543
+    },
+    "ebitda_margin_by_sector_operating_only": {
+      "grouping": "sector",
+      "metric": "ebitda_margin",
+      "groups": 9,
+      "observations": 383,
+      "f_statistic": 8.212793008330559,
+      "p_value": 2.9565339920118983e-10,
+      "eta_squared": 0.14942459359890553,
+      "omega_squared": 0.1309326915173352,
+      "share_within_group": 0.8505754064010945
+    },
+    "spread": {
+      "median_within_sector_iqr": 0.15572898978436098,
+      "iqr_of_sector_medians": 0.10737036860192001,
+      "full_sample_iqr": 0.2191645691625969,
+      "range_of_sector_medians": 0.43465775944049095,
+      "widest_sector": "Energy",
+      "widest_sector_iqr": 0.37000949486143314,
+      "narrowest_sector": "Materials",
+      "narrowest_sector_iqr": 0.11094674276747934
+    },
+    "operating_universe_n": 383
+  },
+  "valuation": {
+    "specifications": [
+      {
+        "specification": "earnings yield ~ ROE + net margin (entangled)",
+        "dependent": "w_earnings_yield",
+        "n": 354,
+        "r_squared": 0.002018511098132003,
+        "adj_r_squared": -0.0036679931121350595,
+        "sector_fixed_effects": false,
+        "terms": [
+          {
+            "term": "const",
+            "coefficient": 0.04624912636295249,
+            "std_error": 0.002677802821904698,
+            "t_stat": 17.27129644670995,
+            "p_value": 8.202405879084317e-49
+          },
+          {
+            "term": "w_roe",
+            "coefficient": -0.0024204438117459825,
+            "std_error": 0.005843418122528486,
+            "t_stat": -0.41421711761722096,
+            "p_value": 0.6789681154455073
+          },
+          {
+            "term": "w_net_margin",
+            "coefficient": 0.011501299990395989,
+            "std_error": 0.013955035479391215,
+            "t_stat": 0.8241684521247616,
+            "p_value": 0.410403530375108
+          }
+        ]
+      },
+      {
+        "specification": "log P/E ~ EBITDA margin",
+        "dependent": "w_log_pe",
+        "n": 354,
+        "r_squared": 0.007845325495962396,
+        "adj_r_squared": 0.0050267042615758095,
+        "sector_fixed_effects": false,
+        "terms": [
+          {
+            "term": "const",
+            "coefficient": 3.2972521236893595,
+            "std_error": 0.06366798367813109,
+            "t_stat": 51.788229078501686,
+            "p_value": 1.026181484747814e-166
+          },
+          {
+            "term": "w_ebitda_margin",
+            "coefficient": -0.3337167231364766,
+            "std_error": 0.2000280249313661,
+            "t_stat": -1.6683498387337572,
+            "p_value": 0.09613552272558157
+          }
+        ]
+      },
+      {
+        "specification": "log P/E ~ EBITDA margin + log size",
+        "dependent": "w_log_pe",
+        "n": 354,
+        "r_squared": 0.0911538974180719,
+        "adj_r_squared": 0.08597528714694991,
+        "sector_fixed_effects": false,
+        "terms": [
+          {
+            "term": "const",
+            "coefficient": -0.18706042358749148,
+            "std_error": 0.617300085486387,
+            "t_stat": -0.30302996546663624,
+            "p_value": 0.7620465425506213
+          },
+          {
+            "term": "w_ebitda_margin",
+            "coefficient": -0.6068080617660495,
+            "std_error": 0.19767138236864162,
+            "t_stat": -3.0697820518824526,
+            "p_value": 0.002309026903800562
+          },
+          {
+            "term": "w_log_market_cap",
+            "coefficient": 0.14425671027747303,
+            "std_error": 0.02543213354828187,
+            "t_stat": 5.672222112376358,
+            "p_value": 2.9496894799218015e-08
+          }
+        ]
+      },
+      {
+        "specification": "log P/E ~ EBITDA margin + log size + sustainable growth",
+        "dependent": "w_log_pe",
+        "n": 354,
+        "r_squared": 0.09759505382652389,
+        "adj_r_squared": 0.08986015428789396,
+        "sector_fixed_effects": false,
+        "terms": [
+          {
+            "term": "const",
+            "coefficient": -0.36426127182459345,
+            "std_error": 0.6261060586625617,
+            "t_stat": -0.5817884474759749,
+            "p_value": 0.5610837112974012
+          },
+          {
+            "term": "w_ebitda_margin",
+            "coefficient": -0.5956042543378224,
+            "std_error": 0.19737817947354638,
+            "t_stat": -3.0175790248265426,
+            "p_value": 0.002734675957494844
+          },
+          {
+            "term": "w_log_market_cap",
+            "coefficient": 0.1530057321503246,
+            "std_error": 0.025974686652648654,
+            "t_stat": 5.890570854479297,
+            "p_value": 9.038429826605235e-09
+          },
+          {
+            "term": "w_sustainable_growth",
+            "coefficient": -0.2255670962757903,
+            "std_error": 0.14271201485947557,
+            "t_stat": -1.5805753741049746,
+            "p_value": 0.11487841131320511
+          }
+        ]
+      },
+      {
+        "specification": "log P/E ~ EBITDA margin + log size + sector fixed effects",
+        "dependent": "w_log_pe",
+        "n": 354,
+        "r_squared": 0.24501871007073817,
+        "adj_r_squared": 0.218450453533638,
+        "sector_fixed_effects": true,
+        "terms": [
+          {
+            "term": "const",
+            "coefficient": -0.31463523622698353,
+            "std_error": 0.6490000773122012,
+            "t_stat": -0.4847999980678406,
+            "p_value": 0.6281294924559967
+          },
+          {
+            "term": "w_ebitda_margin",
+            "coefficient": -0.49116004959641746,
+            "std_error": 0.21526206283594973,
+            "t_stat": -2.281684209124802,
+            "p_value": 0.02312379781655933
+          },
+          {
+            "term": "w_log_market_cap",
+            "coefficient": 0.12910117743003574,
+            "std_error": 0.025114100387370514,
+            "t_stat": 5.140585385847971,
+            "p_value": 4.6239522012455877e-07
+          }
+        ]
+      },
+      {
+        "specification": "log P/B ~ ROE + log size (mechanically linked, see decomposition)",
+        "dependent": "w_log_pb",
+        "n": 354,
+        "r_squared": 0.6391899820960416,
+        "adj_r_squared": 0.6371340845581274,
+        "sector_fixed_effects": false,
+        "terms": [
+          {
+            "term": "const",
+            "coefficient": -3.9941976248885585,
+            "std_error": 0.6050043923990389,
+            "t_stat": -6.601931614166085,
+            "p_value": 1.5017858677156336e-10
+          },
+          {
+            "term": "w_roe",
+            "coefficient": 2.393925918257105,
+            "std_error": 0.11529105512347194,
+            "t_stat": 20.76419472172676,
+            "p_value": 4.85437393792572e-63
+          },
+          {
+            "term": "w_log_market_cap",
+            "coefficient": 0.19813304421305716,
+            "std_error": 0.024776212615135487,
+            "t_stat": 7.9969060360751065,
+            "p_value": 1.8689259162417535e-14
+          }
+        ]
+      }
+    ],
+    "primary": {
+      "specification": "log P/E ~ EBITDA margin + log size",
+      "dependent": "w_log_pe",
+      "n": 354,
+      "r_squared": 0.0911538974180719,
+      "adj_r_squared": 0.08597528714694991,
+      "sector_fixed_effects": false,
+      "terms": [
+        {
+          "term": "const",
+          "coefficient": -0.18706042358749148,
+          "std_error": 0.617300085486387,
+          "t_stat": -0.30302996546663624,
+          "p_value": 0.7620465425506213
+        },
+        {
+          "term": "w_ebitda_margin",
+          "coefficient": -0.6068080617660495,
+          "std_error": 0.19767138236864162,
+          "t_stat": -3.0697820518824526,
+          "p_value": 0.002309026903800562
+        },
+        {
+          "term": "w_log_market_cap",
+          "coefficient": 0.14425671027747303,
+          "std_error": 0.02543213354828187,
+          "t_stat": 5.672222112376358,
+          "p_value": 2.9496894799218015e-08
+        }
+      ]
+    },
+    "book_multiple_decomposition": {
+      "n": 354,
+      "identity_max_abs_residual": 8.881784197001252e-16,
+      "var_log_price_to_book": 0.847915075921333,
+      "var_log_roe": 0.771676499458934,
+      "var_log_price_to_earnings": 0.45309498367485124,
+      "covariance_term": -0.3768564072124525,
+      "share_from_roe": 0.9100870138680349,
+      "share_from_earnings_multiple": 0.5343636368094109,
+      "share_from_covariance": -0.44445065067744605,
+      "corr_log_roe_log_pe": -0.3186644697660666
+    }
+  },
+  "growth_screen": {
+    "cost_of_equity": 0.09,
+    "terminal_payout": 0.45,
+    "roe_interpretable_max": 0.4,
+    "gap_threshold": 0.02,
+    "core_universe": 354,
+    "excluded_roe_above_max": 60,
+    "excluded_earnings_constrained": 9,
+    "screen_universe": 285,
+    "median_sustainable_growth": 0.1043680730165158,
+    "median_priced_in_growth": 0.07086560352841673,
+    "median_gap": 0.035711409323371135,
+    "n_funding_surplus": 165,
+    "n_funding_deficit": 69,
+    "n_broadly_consistent": 51,
+    "share_in_deficit": 0.24210526315789474,
+    "deficit_market_cap": 4236800797696.0,
+    "deficit_median_payout": 0.6617527005,
+    "deficit_median_roe": 0.08848445684543414,
+    "surplus_median_payout": 0.2228318006,
+    "surplus_median_roe": 0.21192030722679647,
+    "deficit_by_sector": {
+      "Utilities": 21,
+      "Health Care": 11,
+      "Industrials": 7,
+      "Consumer Staples": 6,
+      "Energy": 6,
+      "Information Technology": 4,
+      "Financials": 4,
+      "Consumer Discretionary": 4,
+      "Materials": 3,
+      "Real Estate": 2,
+      "Communication Services": 1
+    },
+    "deficit_top_10": [
+      {
+        "symbol": "FANG",
+        "name": "Diamondback Energy",
+        "sector": "Energy",
+        "roe": 0.03879096296622202,
+        "payout_ratio": 0.8424073238,
+        "sustainable_growth": 0.006113171666222016,
+        "priced_in_growth": 0.07840822043669891,
+        "growth_gap": -0.0722950487704769,
+        "price_to_earnings": 38.820614,
+        "dividend_yield": 0.0217
+      },
+      {
+        "symbol": "KDP",
+        "name": "Keurig Dr Pepper",
+        "sector": "Consumer Staples",
+        "roe": 0.0549062230939124,
+        "payout_ratio": 0.9292989887999998,
+        "sustainable_growth": 0.0038819254939124084,
+        "priced_in_growth": 0.07605400397913356,
+        "growth_gap": -0.07217207848522116,
+        "price_to_earnings": 32.267326,
+        "dividend_yield": 0.0288
+      },
+      {
+        "symbol": "PLD",
+        "name": "Prologis",
+        "sector": "Real Estate",
+        "roe": 0.07615404620116191,
+        "payout_ratio": 0.954258858,
+        "sustainable_growth": 0.0034833730411619086,
+        "priced_in_growth": 0.07556995317930808,
+        "growth_gap": -0.07208658013814617,
+        "price_to_earnings": 31.18493,
+        "dividend_yield": 0.0306
+      },
+      {
+        "symbol": "FE",
+        "name": "FirstEnergy",
+        "sector": "Utilities",
+        "roe": 0.08365392986211406,
+        "payout_ratio": 0.9975866433,
+        "sustainable_growth": 0.00020188677211406138,
+        "priced_in_growth": 0.07182112789721229,
+        "growth_gap": -0.07161924112509822,
+        "price_to_earnings": 24.754011,
+        "dividend_yield": 0.0403
+      },
+      {
+        "symbol": "GPN",
+        "name": "Global Payments",
+        "sector": "Financials",
+        "roe": 0.024268491480531337,
+        "payout_ratio": 0.4882421913,
+        "sustainable_growth": 0.012419590020531335,
+        "priced_in_growth": 0.07976942163334912,
+        "growth_gap": -0.06734983161281778,
+        "price_to_earnings": 43.985783,
+        "dividend_yield": 0.0111
+      },
+      {
+        "symbol": "BEN",
+        "name": "Franklin Resources",
+        "sector": "Financials",
+        "roe": 0.06355657652506393,
+        "payout_ratio": 0.895985622,
+        "sustainable_growth": 0.006610797775063927,
+        "priced_in_growth": 0.06996061593050876,
+        "growth_gap": -0.06334981815544483,
+        "price_to_earnings": 22.45578,
+        "dividend_yield": 0.0399
+      },
+      {
+        "symbol": "D",
+        "name": "Dominion Energy",
+        "sector": "Utilities",
+        "roe": 0.09105230611282919,
+        "payout_ratio": 0.9187577741999999,
+        "sustainable_growth": 0.007397292012829196,
+        "priced_in_growth": 0.07031037068965026,
+        "growth_gap": -0.06291307867682107,
+        "price_to_earnings": 22.854671,
+        "dividend_yield": 0.0402
+      },
+      {
+        "symbol": "FRT",
+        "name": "Federal Realty Investment Trust",
+        "sector": "Real Estate",
+        "roe": 0.13528534237789425,
+        "payout_ratio": 0.9359568108000001,
+        "sustainable_growth": 0.00866410477789424,
+        "priced_in_growth": 0.07096065994245127,
+        "growth_gap": -0.062296555164557024,
+        "price_to_earnings": 23.635273,
+        "dividend_yield": 0.0396
+      },
+      {
+        "symbol": "SWK",
+        "name": "Stanley Black & Decker",
+        "sector": "Industrials",
+        "roe": 0.0689422640913357,
+        "payout_ratio": 0.8433457016,
+        "sustainable_growth": 0.010800102011335709,
+        "priced_in_growth": 0.07100423115976429,
+        "growth_gap": -0.06020412914842858,
+        "price_to_earnings": 23.689486,
+        "dividend_yield": 0.0356
+      },
+      {
+        "symbol": "EMN",
+        "name": "Eastman Chemical Company",
+        "sector": "Materials",
+        "roe": 0.07201665653096893,
+        "payout_ratio": 0.9001208972,
+        "sustainable_growth": 0.007192959040968938,
+        "priced_in_growth": 0.06605321677671189,
+        "growth_gap": -0.05886025773574295,
+        "price_to_earnings": 18.791668,
+        "dividend_yield": 0.0479
+      }
+    ],
+    "surplus_top_10": [
+      {
+        "symbol": "CHTR",
+        "name": "Charter Communications",
+        "sector": "Communication Services",
+        "roe": 0.29404317012003095,
+        "payout_ratio": 0.0,
+        "sustainable_growth": 0.29404317012003095,
+        "priced_in_growth": -0.02829590801310193,
+        "growth_gap": 0.3223390781331329,
+        "price_to_earnings": 3.80402
+      },
+      {
+        "symbol": "GOOGL",
+        "name": "Alphabet Inc. (Class A)",
+        "sector": "Communication Services",
+        "roe": 0.39413703207219697,
+        "payout_ratio": 0.0436945184,
+        "sustainable_growth": 0.37691540427219694,
+        "priced_in_growth": 0.06322318581728549,
+        "growth_gap": 0.31369221845491146,
+        "price_to_earnings": 16.805584
+      },
+      {
+        "symbol": "DXCM",
+        "name": "Dexcom",
+        "sector": "Health Care",
+        "roe": 0.36279874250061883,
+        "payout_ratio": 0.0,
+        "sustainable_growth": 0.36279874250061883,
+        "priced_in_growth": 0.07735645005081301,
+        "growth_gap": 0.2854422924498058,
+        "price_to_earnings": 35.59127
+      },
+      {
+        "symbol": "PGR",
+        "name": "Progressive Corporation",
+        "sector": "Financials",
+        "roe": 0.33861880379642256,
+        "payout_ratio": 0.0199142424,
+        "sustainable_growth": 0.3318754668564226,
+        "priced_in_growth": 0.04932559302381495,
+        "growth_gap": 0.28254987383260766,
+        "price_to_earnings": 11.063468
+      },
+      {
+        "symbol": "BA",
+        "name": "Boeing",
+        "sector": "Industrials",
+        "roe": 0.36547434008563146,
+        "payout_ratio": 0.0,
+        "sustainable_growth": 0.36547434008563146,
+        "priced_in_growth": 0.08392445054249593,
+        "growth_gap": 0.28154988954313553,
+        "price_to_earnings": 74.067375
+      },
+      {
+        "symbol": "UBER",
+        "name": "Uber",
+        "sector": "Industrials",
+        "roe": 0.3405526278902617,
+        "payout_ratio": 0.0,
+        "sustainable_growth": 0.3405526278902617,
+        "priced_in_growth": 0.06315892599915898,
+        "growth_gap": 0.2773937018911027,
+        "price_to_earnings": 16.76535
+      },
+      {
+        "symbol": "AES",
+        "name": "AES Corporation",
+        "sector": "Utilities",
+        "roe": 0.3852814052743648,
+        "payout_ratio": 0.26440450101,
+        "sustainable_growth": 0.28341126756436474,
+        "priced_in_growth": 0.008817569602613623,
+        "growth_gap": 0.27459369796175115,
+        "price_to_earnings": 5.5430713
+      },
+      {
+        "symbol": "PTC",
+        "name": "PTC Inc.",
+        "sector": "Information Technology",
+        "roe": 0.3213248318493145,
+        "payout_ratio": 0.0,
+        "sustainable_growth": 0.3213248318493145,
+        "priced_in_growth": 0.05961376256167056,
+        "growth_gap": 0.2617110692876439,
+        "price_to_earnings": 14.809336
+      },
+      {
+        "symbol": "LULU",
+        "name": "Lululemon Athletica",
+        "sector": "Consumer Discretionary",
+        "roe": 0.29805795767196547,
+        "payout_ratio": 0.0,
+        "sustainable_growth": 0.29805795767196547,
+        "priced_in_growth": 0.042889984819059326,
+        "growth_gap": 0.25516797285290616,
+        "price_to_earnings": 9.552109
+      },
+      {
+        "symbol": "TER",
+        "name": "Teradyne",
+        "sector": "Information Technology",
+        "roe": 0.36249563486611625,
+        "payout_ratio": 0.0750813168,
+        "sustainable_growth": 0.33527898526611627,
+        "priced_in_growth": 0.08041039727742227,
+        "growth_gap": 0.254868587988694,
+        "price_to_earnings": 46.925823
+      }
+    ]
+  },
+  "cost_of_equity_sweep": [
+    {
+      "cost_of_equity": 0.07,
+      "median_priced_in_growth": 0.050865603528416736,
+      "median_gap": 0.05571140932337112,
+      "n_funding_deficit": 34,
+      "n_funding_surplus": 193,
+      "n_broadly_consistent": 58,
+      "rank_corr_vs_base": 1.0
+    },
+    {
+      "cost_of_equity": 0.08,
+      "median_priced_in_growth": 0.06086560352841673,
+      "median_gap": 0.04571140932337112,
+      "n_funding_deficit": 53,
+      "n_funding_surplus": 182,
+      "n_broadly_consistent": 50,
+      "rank_corr_vs_base": 1.0
+    },
+    {
+      "cost_of_equity": 0.09,
+      "median_priced_in_growth": 0.07086560352841673,
+      "median_gap": 0.035711409323371135,
+      "n_funding_deficit": 69,
+      "n_funding_surplus": 165,
+      "n_broadly_consistent": 51,
+      "rank_corr_vs_base": 1.0
+    },
+    {
+      "cost_of_equity": 0.1,
+      "median_priced_in_growth": 0.08086560352841674,
+      "median_gap": 0.025711409323371126,
+      "n_funding_deficit": 86,
+      "n_funding_surplus": 150,
+      "n_broadly_consistent": 49,
+      "rank_corr_vs_base": 1.0
+    },
+    {
+      "cost_of_equity": 0.11,
+      "median_priced_in_growth": 0.09086560352841673,
+      "median_gap": 0.015711409323371117,
+      "n_funding_deficit": 92,
+      "n_funding_surplus": 133,
+      "n_broadly_consistent": 60,
+      "rank_corr_vs_base": 1.0
+    },
+    {
+      "cost_of_equity": 0.12,
+      "median_priced_in_growth": 0.10086560352841673,
+      "median_gap": 0.005711409323371136,
+      "n_funding_deficit": 103,
+      "n_funding_surplus": 117,
+      "n_broadly_consistent": 65,
+      "rank_corr_vs_base": 1.0
+    }
+  ],
+  "peer_benchmark": {
+    "sector": "Information Technology",
+    "market_cap": 24573455622656.0,
+    "share_of_index_market_cap": 0.36906017126333446,
+    "constituents_in_base": 67,
+    "constituents_in_core": 56,
+    "classification_counts": {
+      "cheap on price alone": 19,
+      "expensive without the quality": 15,
+      "quality, fully priced": 12,
+      "quality at a discount": 10
+    },
+    "quality_at_a_discount": [
+      {
+        "symbol": "NVDA",
+        "name": "Nvidia",
+        "ebitda_margin": 0.6643100079485204,
+        "roe": 0.8615417806981355,
+        "price_to_earnings": 27.467564,
+        "composite_rank": 0.8571428571428571
+      },
+      {
+        "symbol": "MU",
+        "name": "Micron Technology",
+        "ebitda_margin": 0.7557215085814368,
+        "roe": 0.5079863416192627,
+        "price_to_earnings": 21.096205,
+        "composite_rank": 0.8511904761904762
+      },
+      {
+        "symbol": "ADBE",
+        "name": "Adobe Inc.",
+        "ebitda_margin": 0.3861020829816048,
+        "roe": 0.5923719660471576,
+        "price_to_earnings": 16.361988,
+        "composite_rank": 0.8333333333333334
+      },
+      {
+        "symbol": "GEN",
+        "name": "Gen Digital",
+        "ebitda_margin": 0.47450283816364514,
+        "roe": 0.3946774650134182,
+        "price_to_earnings": 17.514286,
+        "composite_rank": 0.8333333333333334
+      },
+      {
+        "symbol": "PTC",
+        "name": "PTC Inc.",
+        "ebitda_margin": 0.43194923040977934,
+        "roe": 0.3213248318493145,
+        "price_to_earnings": 14.809336,
+        "composite_rank": 0.7916666666666666
+      },
+      {
+        "symbol": "ORCL",
+        "name": "Oracle Corporation",
+        "ebitda_margin": 0.4527220225001979,
+        "roe": 0.4616564214460853,
+        "price_to_earnings": 24.210964,
+        "composite_rank": 0.7797619047619048
+      },
+      {
+        "symbol": "MSFT",
+        "name": "Microsoft",
+        "ebitda_margin": 0.5853350374961176,
+        "roe": 0.30118358070736073,
+        "price_to_earnings": 27.693422,
+        "composite_rank": 0.7321428571428572
+      },
+      {
+        "symbol": "AAPL",
+        "name": "Apple Inc.",
+        "ebitda_margin": 0.35979163317887786,
+        "roe": 1.1834239383172427,
+        "price_to_earnings": 37.308838,
+        "composite_rank": 0.7083333333333334
+      },
+      {
+        "symbol": "NXPI",
+        "name": "NXP Semiconductors",
+        "ebitda_margin": 0.38437619145644636,
+        "roe": 0.2593666398824902,
+        "price_to_earnings": 19.496586,
+        "composite_rank": 0.6845238095238096
+      },
+      {
+        "symbol": "CSCO",
+        "name": "Cisco",
+        "ebitda_margin": 0.29413344388770235,
+        "roe": 0.26071930264323606,
+        "price_to_earnings": 32.968376,
+        "composite_rank": 0.5238095238095237
+      }
+    ],
+    "cheap_on_price_alone": [
+      {
+        "symbol": "SMCI",
+        "name": "Supermicro",
+        "ebitda_margin": 0.07229740734595863,
+        "roe": 0.19505774297154999,
+        "price_to_earnings": 11.349693,
+        "earnings_yield": 0.08810811006077433
+      },
+      {
+        "symbol": "FSLR",
+        "name": "First Solar",
+        "ebitda_margin": 0.4436348875234644,
+        "roe": 0.17129885166663827,
+        "price_to_earnings": 12.31611,
+        "earnings_yield": 0.08119446805850224
+      },
+      {
+        "symbol": "CTSH",
+        "name": "Cognizant",
+        "ebitda_margin": 0.186489235665418,
+        "roe": 0.14564320528305788,
+        "price_to_earnings": 13.605151,
+        "earnings_yield": 0.0735015730439155
+      },
+      {
+        "symbol": "ACN",
+        "name": "Accenture",
+        "ebitda_margin": 0.17706789929075095,
+        "roe": 0.23982655317561807,
+        "price_to_earnings": 15.0144,
+        "earnings_yield": 0.06660272804774084
+      },
+      {
+        "symbol": "EPAM",
+        "name": "EPAM Systems",
+        "ebitda_margin": 0.13412544848991395,
+        "roe": 0.1078989132821131,
+        "price_to_earnings": 15.923912,
+        "earnings_yield": 0.06279863892741934
+      },
+      {
+        "symbol": "ROP",
+        "name": "Roper Technologies",
+        "ebitda_margin": 0.3910486250855989,
+        "roe": 0.12624086224325068,
+        "price_to_earnings": 17.418936,
+        "earnings_yield": 0.05740878776981557
+      },
+      {
+        "symbol": "CDW",
+        "name": "CDW",
+        "ebitda_margin": 0.08556875226680322,
+        "roe": 0.4217547751694176,
+        "price_to_earnings": 18.086374,
+        "earnings_yield": 0.05529024225640806
+      },
+      {
+        "symbol": "QCOM",
+        "name": "Qualcomm",
+        "ebitda_margin": 0.27227757005787934,
+        "roe": 0.3408873772870227,
+        "price_to_earnings": 19.053812,
+        "earnings_yield": 0.05248293622294583
+      }
+    ],
+    "median_ebitda_margin": 0.29986747857874574,
+    "median_roe": 0.24959659652905414,
+    "median_pe": 36.238577
+  },
+  "assumptions": {
+    "cost_of_equity": 0.09,
+    "cost_of_equity_sweep": [
+      0.07,
+      0.08,
+      0.09,
+      0.1,
+      0.11,
+      0.12
+    ],
+    "terminal_payout": 0.45,
+    "growth_gap_threshold": 0.02,
+    "roe_interpretable_max": 0.4,
+    "winsorisation": [
+      0.01,
+      0.99
+    ],
+    "screen_bounds": {
+      "min_pe": 0.0,
+      "min_pb": 0.0,
+      "max_pb": 250.0,
+      "max_payout_ratio": 1.0,
+      "ebitda_margin_bounds": [
+        -1.0,
+        1.0
+      ],
+      "flag_high_pe": 100.0,
+      "flag_high_ps": 30.0
+    }
+  }
+}

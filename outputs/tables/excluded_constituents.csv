@@ -1,0 +1,150 @@
+symbol,name,sector,sub_industry,market_cap,fail_reasons,in_base,in_margin,in_returns
+GOOG,Alphabet Inc. (Class C),Communication Services,Interactive Media & Services,4082107678720.0,dual_class_secondary,False,False,False
+JPM,JPMorgan Chase,Financials,Diversified Banks,946899124224.0,ebitda_missing,True,False,True
+INTC,Intel,Information Technology,Semiconductors,476013789184.0,negative_trailing_eps,True,True,False
+ABBV,AbbVie,Health Care,Biotechnology,462489944064.0,non_positive_book; payout_above_earnings,True,True,False
+BAC,Bank of America,Financials,Diversified Banks,437746040832.0,ebitda_missing,True,False,True
+MRK,Merck & Co.,Health Care,Pharmaceuticals,374121889792.0,payout_above_earnings,True,True,False
+MS,Morgan Stanley,Financials,Investment Banking & Brokerage,332677349376.0,ebitda_missing,True,False,True
+DELL,Dell Technologies,Information Technology,"Technology Hardware, Storage & Peripherals",318031298560.0,non_positive_book,True,True,False
+PM,Philip Morris International,Consumer Staples,Tobacco,292925800448.0,non_positive_book,True,True,False
+GS,Goldman Sachs,Financials,Investment Banking & Brokerage,292458364928.0,ebitda_missing,True,False,True
+WFC,Wells Fargo,Financials,Diversified Banks,269952401408.0,ebitda_missing,True,False,True
+C,Citigroup,Financials,Diversified Banks,225346846720.0,ebitda_missing,True,False,True
+AXP,American Express,Financials,Consumer Finance,222838751232.0,ebitda_missing,True,False,True
+SCHW,Charles Schwab Corporation,Financials,Investment Banking & Brokerage,187183284224.0,ebitda_missing,True,False,True
+GILD,Gilead Sciences,Health Care,Biotechnology,185509691392.0,negative_trailing_eps,True,True,False
+MCD,McDonald's,Consumer Discretionary,Restaurants,184659066880.0,non_positive_book,True,True,False
+WELL,Welltower,Real Estate,Health Care REITs,171921276928.0,payout_above_earnings,True,True,False
+PFE,Pfizer,Health Care,Pharmaceuticals,165404524544.0,payout_above_earnings,True,True,False
+BX,Blackstone Inc.,Financials,Asset Management & Custody Banks,163540647936.0,ebitda_missing; payout_above_earnings,True,False,False
+WDC,Western Digital,Information Technology,"Technology Hardware, Storage & Peripherals",161846820864.0,pb_missing,True,True,False
+BKNG,Booking Holdings,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",149975547904.0,non_positive_book,True,True,False
+COF,Capital One,Financials,Consumer Finance,132880826368.0,ebitda_missing,True,False,True
+SBUX,Starbucks,Consumer Discretionary,Restaurants,121660801024.0,non_positive_book; payout_above_earnings,True,True,False
+MO,Altria,Consumer Staples,Tobacco,116147380224.0,non_positive_book,True,True,False
+LOW,Lowe's,Consumer Discretionary,Home Improvement Retail,112121028608.0,non_positive_book,True,True,False
+MCK,McKesson Corporation,Health Care,Health Care Distributors,107820433408.0,non_positive_book,True,True,False
+EQIX,Equinix,Real Estate,Data Center REITs,100570128384.0,payout_above_earnings,True,True,False
+KKR,KKR,Financials,Asset Management & Custody Banks,98297741312.0,ebitda_missing,True,False,True
+USB,U.S. Bancorp,Financials,Diversified Banks,97798889472.0,ebitda_missing,True,False,True
+PNC,PNC Financial Services,Financials,Diversified Banks,96727883776.0,ebitda_missing,True,False,True
+UPS,United Parcel Service,Industrials,Air Freight & Logistics,87639007232.0,payout_above_earnings,True,True,False
+HCA,HCA Healthcare,Health Care,Health Care Facilities,87046594560.0,non_positive_book,True,True,False
+MAR,Marriott International,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",86871687168.0,non_positive_book,True,True,False
+CL,Colgate-Palmolive,Consumer Staples,Household Products,71825268736.0,book_near_zero,True,True,False
+WBD,Warner Bros. Discovery,Communication Services,Broadcasting,71177609216.0,negative_trailing_eps,True,True,False
+ORLY,O'Reilly Auto Parts,Consumer Discretionary,Automotive Retail,70355320832.0,non_positive_book,True,True,False
+HLT,Hilton Worldwide,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",70109970432.0,non_positive_book,True,True,False
+DLR,Digital Realty,Real Estate,Data Center REITs,69399478272.0,payout_above_earnings,True,True,False
+APD,Air Products,Materials,Industrial Gases,68910039040.0,negative_trailing_eps,True,True,False
+TDG,TransDigm Group,Industrials,Aerospace & Defense,63775289344.0,non_positive_book,True,True,False
+TFC,Truist Financial,Financials,Diversified Banks,62070829056.0,ebitda_missing,True,False,True
+MRNA,Moderna,Health Care,Biotechnology,60208766976.0,negative_trailing_eps,True,True,False
+O,Realty Income,Real Estate,Retail REITs,58192408576.0,payout_above_earnings,True,True,False
+CAH,Cardinal Health,Health Care,Health Care Distributors,57095016448.0,non_positive_book,True,True,False
+F,Ford Motor Company,Consumer Discretionary,Automobile Manufacturers,56384606208.0,negative_trailing_eps,True,True,False
+PSA,Public Storage,Real Estate,Self-Storage REITs,56272093184.0,payout_above_earnings,True,True,False
+STT,State Street Corporation,Financials,Asset Management & Custody Banks,52204318720.0,ebitda_missing,True,False,True
+FITB,Fifth Third Bancorp,Financials,Regional Banks,49334956032.0,ebitda_missing,True,False,True
+AMP,Ameriprise Financial,Financials,Asset Management & Custody Banks,48746684416.0,ebitda_missing,True,False,True
+VTR,Ventas,Real Estate,Health Care REITs,47221841920.0,payout_above_earnings,True,True,False
+LYV,Live Nation Entertainment,Communication Services,Movies & Entertainment,41837195264.0,book_near_zero; negative_trailing_eps,True,True,False
+YUM,Yum! Brands,Consumer Discretionary,Restaurants,41281748992.0,non_positive_book,True,True,False
+MSCI,MSCI,Financials,Financial Exchanges & Data,40757800960.0,non_positive_book,True,True,False
+TTWO,Take-Two Interactive,Communication Services,Interactive Home Entertainment,40413954048.0,negative_trailing_eps,True,True,False
+MCHP,Microchip Technology,Information Technology,Semiconductors,39509315584.0,payout_above_earnings,True,True,False
+KVUE,Kenvue,Consumer Staples,Personal Care Products,36744396800.0,payout_above_earnings,True,True,False
+EL,Estée Lauder Companies (The),Consumer Staples,Personal Care Products,36595924992.0,payout_above_earnings,True,True,False
+KMB,Kimberly-Clark,Consumer Staples,Household Products,36347564032.0,payout_above_earnings,True,True,False
+WEC,WEC Energy Group,Utilities,Electric Utilities,34452054016.0,pb_missing,True,True,False
+HBAN,Huntington Bancshares,Financials,Regional Banks,34104600576.0,ebitda_missing,True,False,True
+MTB,M&T Bank,Financials,Regional Banks,34007140352.0,ebitda_missing,True,False,True
+RJF,Raymond James Financial,Financials,Investment Banking & Brokerage,33799995392.0,ebitda_missing,True,False,True
+NTRS,Northern Trust,Financials,Asset Management & Custody Banks,33660178432.0,ebitda_missing,True,False,True
+IRM,Iron Mountain,Real Estate,Other Specialized REITs,33295081472.0,non_positive_book; payout_above_earnings,True,True,False
+CNC,Centene Corporation,Health Care,Managed Health Care,33265623040.0,negative_trailing_eps,True,True,False
+CCI,Crown Castle,Real Estate,Telecom Tower REITs,32941058048.0,non_positive_book; payout_above_earnings,True,True,False
+ZTS,Zoetis,Health Care,Pharmaceuticals,31475243008.0,pb_missing,True,True,False
+KHC,Kraft Heinz,Consumer Staples,Packaged Foods & Meats,31139731456.0,negative_trailing_eps,True,True,False
+EXR,Extra Space Storage,Real Estate,Self-Storage REITs,30882906112.0,payout_above_earnings,True,True,False
+CFG,Citizens Financial Group,Financials,Regional Banks,29389717504.0,ebitda_missing,True,False,True
+HPQ,HP Inc.,Information Technology,"Technology Hardware, Storage & Peripherals",28848293888.0,non_positive_book,True,True,False
+MTD,Mettler Toledo,Health Care,Life Sciences Tools & Services,27404804096.0,book_near_zero,True,True,False
+OTIS,Otis Worldwide,Industrials,Industrial Machinery & Supplies & Components,26962810880.0,non_positive_book,True,True,False
+VRSN,Verisign,Information Technology,Internet Services & Infrastructure,26212382720.0,non_positive_book,True,True,False
+SYF,Synchrony Financial,Financials,Consumer Finance,25505820672.0,ebitda_missing,True,False,True
+RF,Regions Financial Corporation,Financials,Regional Banks,25498251264.0,ebitda_missing,True,False,True
+FOX,Fox Corporation (Class B),Communication Services,Broadcasting,25339766784.0,dual_class_secondary,False,False,False
+WRB,W. R. Berkley Corporation,Financials,Property & Casualty Insurance,25288019968.0,pb_missing,True,True,False
+VRSK,Verisk Analytics,Industrials,Research & Consulting Services,24490156032.0,non_positive_book,True,True,False
+SW,Smurfit WestRock,Materials,Paper & Plastic Packaging Products & Materials,23792359424.0,payout_above_earnings,True,True,False
+FICO,Fair Isaac,Information Technology,Application Software,23745519616.0,non_positive_book,True,True,False
+KEY,KeyCorp,Financials,Regional Banks,23263401984.0,ebitda_missing,True,False,True
+DOW,Dow Inc.,Materials,Commodity Chemicals,22594818048.0,negative_trailing_eps,True,True,False
+OMC,Omnicom Group,Communication Services,Advertising,22430525440.0,payout_above_earnings,True,True,False
+IFF,International Flavors & Fragrances,Materials,Specialty Chemicals,22182737920.0,negative_trailing_eps,True,True,False
+GIS,General Mills,Consumer Staples,Packaged Foods & Meats,21695264768.0,negative_trailing_eps,True,True,False
+AMCR,Amcor,Materials,Paper & Plastic Packaging Products & Materials,21582297088.0,payout_above_earnings,True,True,False
+LYB,LyondellBasell,Materials,Specialty Chemicals,21504636928.0,negative_trailing_eps,True,True,False
+SBAC,SBA Communications,Real Estate,Telecom Tower REITs,19776946176.0,non_positive_book,True,True,False
+TSN,Tyson Foods,Consumer Staples,Packaged Foods & Meats,19634042880.0,payout_above_earnings,True,True,False
+VTRS,Viatris,Health Care,Pharmaceuticals,19629418496.0,negative_trailing_eps,True,True,False
+IP,International Paper,Materials,Paper & Plastic Packaging Products & Materials,19223386112.0,negative_trailing_eps,True,True,False
+ESS,Essex Property Trust,Real Estate,Multi-Family Residential REITs,19114401792.0,payout_above_earnings,True,True,False
+GPC,Genuine Parts Company,Consumer Discretionary,Distributors,18907465728.0,payout_above_earnings,True,True,False
+NWS,News Corp (Class B),Communication Services,Publishing,18475956224.0,dual_class_secondary,False,False,False
+DD,DuPont,Materials,Specialty Chemicals,17951262720.0,payout_above_earnings,True,True,False
+INVH,Invitation Homes,Real Estate,Single-Family Residential REITs,17132171264.0,payout_above_earnings,True,True,False
+WY,Weyerhaeuser,Real Estate,Timber REITs,16713868288.0,payout_above_earnings,True,True,False
+ALB,Albemarle Corporation,Materials,Specialty Chemicals,16255196160.0,payout_above_earnings,True,True,False
+KIM,Kimco Realty,Real Estate,Retail REITs,16152607744.0,payout_above_earnings,True,True,False
+MAA,Mid-America Apartment Communities,Real Estate,Multi-Family Residential REITs,15299933184.0,payout_above_earnings,True,True,False
+DOC,Healthpeak Properties,Real Estate,Health Care REITs,14909161472.0,payout_above_earnings,True,True,False
+EG,Everest Group,Financials,Reinsurance,14504290304.0,ebitda_missing,True,False,True
+REG,Regency Centers,Real Estate,Retail REITs,14173341696.0,payout_above_earnings,True,True,False
+CRL,Charles River Laboratories,Health Care,Life Sciences Tools & Services,14053416960.0,negative_trailing_eps,True,True,False
+SJM,J.M. Smucker Company (The),Consumer Staples,Packaged Foods & Meats,14040839168.0,payout_above_earnings,True,True,False
+IVZ,Invesco,Financials,Asset Management & Custody Banks,14004372480.0,negative_trailing_eps,True,True,False
+MAS,Masco,Industrials,Building Products,13988475904.0,non_positive_book,True,True,False
+TRMB,Trimble Inc.,Information Technology,Electronic Equipment & Instruments,13783260160.0,negative_trailing_eps,True,True,False
+UDR,"UDR, Inc.",Real Estate,Multi-Family Residential REITs,13441856512.0,payout_above_earnings,True,True,False
+BAX,Baxter International,Health Care,Health Care Equipment,13286797312.0,negative_trailing_eps,True,True,False
+GDDY,GoDaddy,Information Technology,Internet Services & Infrastructure,12901602304.0,book_near_zero,True,True,False
+CPT,Camden Property Trust,Real Estate,Multi-Family Residential REITs,12214416384.0,payout_above_earnings,True,True,False
+BXP,"BXP, Inc.",Real Estate,Office REITs,12136875008.0,payout_above_earnings,True,True,False
+HRL,Hormel Foods,Consumer Staples,Packaged Foods & Meats,12135234560.0,payout_above_earnings,True,True,False
+IT,Gartner,Information Technology,IT Consulting & Other Services,11793071104.0,non_positive_book,True,True,False
+DPZ,Domino's,Consumer Discretionary,Restaurants,11468776448.0,non_positive_book,True,True,False
+DVA,DaVita,Health Care,Health Care Services,11445082112.0,non_positive_book,True,True,False
+CLX,Clorox,Consumer Staples,Household Products,11400165376.0,payout_above_earnings,True,True,False
+SWKS,Skyworks Solutions,Information Technology,Semiconductors,10784384000.0,payout_above_earnings,True,True,False
+MTCH,Match Group,Communication Services,Interactive Media & Services,9899831296.0,non_positive_book,True,True,False
+WYNN,Wynn Resorts,Consumer Discretionary,Casinos & Gaming,9424169984.0,non_positive_book,True,True,False
+ARE,Alexandria Real Estate Equities,Real Estate,Office REITs,9072863232.0,negative_trailing_eps,True,True,False
+MOS,Mosaic Company (The),Materials,Fertilizers & Agricultural Chemicals,8195350016.0,negative_trailing_eps,True,True,False
+CAG,Conagra Brands,Consumer Staples,Packaged Foods & Meats,7743192064.0,negative_trailing_eps,True,True,False
+TAP,Molson Coors Beverage Company,Consumer Staples,Brewers,7558842880.0,negative_trailing_eps,True,True,False
+CZR,Caesars Entertainment,Consumer Discretionary,Casinos & Gaming,6050149888.0,negative_trailing_eps,True,True,False
+TFX,Teleflex,Health Care,Health Care Equipment,5973236736.0,negative_trailing_eps,True,True,False
+CE,Celanese,Materials,Specialty Chemicals,5120884736.0,negative_trailing_eps,True,True,False
+FMC,FMC Corporation,Materials,Fertilizers & Agricultural Chemicals,1669273728.0,negative_trailing_eps,True,True,False
+PARA,Paramount Global,Communication Services,Movies & Entertainment,3799528.0,ebitda_margin_impossible,True,False,True
+ANSS,Ansys,Information Technology,Application Software,,ebitda_missing; no_market_data; pb_missing; pe_missing; revenue_not_derivable,False,False,False
+AZO,AutoZone,Consumer Discretionary,Automotive Retail,,non_positive_book; revenue_not_derivable,True,False,False
+BRK.B,Berkshire Hathaway,Financials,Multi-Sector Holdings,,ebitda_missing; no_market_data; pb_missing; pe_missing; revenue_not_derivable,False,False,False
+BK,BNY Mellon,Financials,Asset Management & Custody Banks,,ebitda_missing; no_market_data; pb_missing; pe_missing; revenue_not_derivable,False,False,False
+BF.B,Brown–Forman,Consumer Staples,Distillers & Vintners,,ebitda_missing; no_market_data; pb_missing; pe_missing; revenue_not_derivable,False,False,False
+CTLT,Catalent,Health Care,Pharmaceuticals,,ebitda_missing; no_market_data; pb_missing; pe_missing; revenue_not_derivable,False,False,False
+CTRA,Coterra,Energy,Oil & Gas Exploration & Production,,ebitda_missing; no_market_data; pb_missing; pe_missing; revenue_not_derivable,False,False,False
+DAY,Dayforce,Industrials,Human Resource & Employment Services,,ebitda_missing; no_market_data; pb_missing; pe_missing; revenue_not_derivable,False,False,False
+DFS,Discover Financial,Financials,Consumer Finance,,ebitda_missing; no_market_data; pb_missing; pe_missing; revenue_not_derivable,False,False,False
+FI,Fiserv,Financials,Transaction & Payment Processing Services,,ebitda_missing; no_market_data; pb_missing; pe_missing; revenue_not_derivable,False,False,False
+HES,Hess Corporation,Energy,Integrated Oil & Gas,,ebitda_missing; no_market_data; pb_missing; pe_missing; revenue_not_derivable,False,False,False
+HOLX,Hologic,Health Care,Health Care Equipment,,ebitda_missing; no_market_data; pb_missing; pe_missing; revenue_not_derivable,False,False,False
+IPG,Interpublic Group of Companies (The),Communication Services,Advertising,,ebitda_missing; no_market_data; pb_missing; pe_missing; revenue_not_derivable,False,False,False
+JNPR,Juniper Networks,Information Technology,Communications Equipment,,ebitda_missing; no_market_data; pb_missing; pe_missing; revenue_not_derivable,False,False,False
+K,Kellanova,Consumer Staples,Packaged Foods & Meats,,ebitda_missing; no_market_data; pb_missing; pe_missing; revenue_not_derivable,False,False,False
+MRO,Marathon Oil,Energy,Oil & Gas Exploration & Production,,ebitda_missing; no_market_data; pb_missing; pe_missing; revenue_not_derivable,False,False,False
+MMC,Marsh McLennan,Financials,Insurance Brokers,,ebitda_missing; no_market_data; pb_missing; pe_missing; revenue_not_derivable,False,False,False
+WBA,Walgreens Boots Alliance,Consumer Staples,Drug Retail,,ebitda_missing; no_market_data; pb_missing; pe_missing; revenue_not_derivable,False,False,False
