@@ -7,6 +7,11 @@ going back to the pipeline.
 The extracts in `extracts/` are written by `make analysis` and are the only
 inputs — no manual reshaping between the pipeline and the dashboard.
 
+**Tableau build:** the shaped extracts and a short build guide are in
+[`../tableau/`](../tableau/BUILD.md). Four sheets, two calculated fields. The CSVs there are
+pre-aggregated — the 354-company constituent file, sector percentiles and the 69-company funding-gap list — so Tableau does presentation rather than
+arithmetic.
+
 **Live dashboard:** https://lohandesilva.github.io/lohan-desilva-portfolio/dashboards/sp500.html
 
 The dashboard is built and hosted directly rather than through a BI tool, so it
